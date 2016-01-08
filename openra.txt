@@ -1,0 +1,50 @@
+
+****** Initializing New Return Authorization ******
+
+
+Today's Date:  12-DEC-14                                                        
+
+Enter Customer Number: 102
+
+    Customer Name: Justin Morrison                                              
+
+    Shipping Address: 270 7th Street                                            
+
+    City, State Zip: San Francisco, CA 94103                                    
+
+    Phone: (415) 861-1313                                                       
+
+Enter Product Number: 203
+
+    Product Number: 203                                                         
+
+    Product Description: Vienna                                                 
+
+    Unit Price: $8                                                              
+
+Enter the Return Quantity: 10
+
+    Amount Returned: $80                                                        
+
+Pick a reason for your return:
+
+Reason                                                                          
+ Code  Reason                                                                   
+------ ---------------                                                          
+1      Bad Quality                                                              
+2      Wrong Order                                                              
+3      Defective                                                                
+4      Late Shipment                                                            
+5      Missing Items                                                            
+
+Enter The Reason Code: 1
+
+****** Return Authorization: 8 has been created.                                
+
+Return Authorization Number: 8                                                  
+
+Mail to:
+-Specialty Java Inc.
+-208 Industrial Blvd.
+-Waconia, MN 55387
+

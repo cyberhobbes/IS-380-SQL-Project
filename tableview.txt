@@ -1,0 +1,104 @@
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CNUM                                      NOT NULL VARCHAR2(3)
+ FIRSTNAME                                          VARCHAR2(10)
+ LASTNAME                                           VARCHAR2(10)
+ ADDRESS                                            VARCHAR2(20)
+ CITY                                               VARCHAR2(15)
+ STATE                                              VARCHAR2(2)
+ ZIP                                                VARCHAR2(5)
+ PHONENUMBER                                        VARCHAR2(10)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PNUM                                      NOT NULL VARCHAR2(3)
+ PDESCRIPTION                                       VARCHAR2(20)
+ UNITPRICE                                          NUMBER(6)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ RCODE                                     NOT NULL VARCHAR2(1)
+ REASON                                             VARCHAR2(20)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ RANUM                                     NOT NULL NUMBER(5)
+ RAOPENDATE                                         DATE
+ RACLOSEDATE                                        DATE
+ STATUS                                             VARCHAR2(6)
+ CNUM                                               VARCHAR2(3)
+ PNUM                                               VARCHAR2(3)
+ RCODE                                              VARCHAR2(1)
+ RETURNQTY                                          NUMBER(3)
+ RETURNPRICE                                        NUMBER(5)
+ RETURNTOTAL                                        NUMBER(7)
+ ACTUALRETURNQTY                                    NUMBER(3)
+ ACTUALRETURNTOTAL                                  NUMBER(7)
+
+
+CNU FIRSTNAME  LASTNAME   ADDRESS              CITY            ST ZIP           
+--- ---------- ---------- -------------------- --------------- -- -----         
+PHONENUMBE                                                                      
+----------                                                                      
+101 James      Freeman    300 Webster Street   Oakland         CA 94607         
+5106533394                                                                      
+                                                                                
+102 Justin     Morrison   270 7th Street       San Francisco   CA 94103         
+4158611313                                                                      
+                                                                                
+103 Jeremy     Tooker     375 Valencia Street  San Francisco   CA 94103         
+4152520800                                                                      
+                                                                                
+
+CNU FIRSTNAME  LASTNAME   ADDRESS              CITY            ST ZIP           
+--- ---------- ---------- -------------------- --------------- -- -----         
+PHONENUMBE                                                                      
+----------                                                                      
+104 Eileen     Rinaldi    1026 Valencia Street San Francisco   CA 94110         
+4156411024                                                                      
+                                                                                
+105 Phil       Jaber      3101 24th Street     San Francisco   CA 94110         
+4158759370                                                                      
+                                                                                
+
+Product  Product                                                                
+ Number   Description     UNITPRICE                                             
+-------- --------------- ----------                                             
+201      Blonde                   7                                             
+202      Kona                    12                                             
+203      Vienna                   8                                             
+204      French                  11                                             
+205      New Orleans             13                                             
+
+Reason Reason                                                                   
+ Code   Description                                                             
+------ ---------------                                                          
+1      Bad Quality                                                              
+2      Wrong Order                                                              
+3      Defective                                                                
+4      Late Shipment                                                            
+5      Missing Items                                                            
+
+                                          Product  Reason                       
+     RANUM RAOPENDAT RACLOSEDA STATUS CNU  Number   Code   RETURNQTY RETURNPRICE
+---------- --------- --------- ------ --- -------- ------ ---------- -----------
+RETURNTOTAL ACTUALRETURNQTY ACTUALRETURNTOTAL                                   
+----------- --------------- -----------------                                   
+         1 10-FEB-14 23-NOV-14 Closed 101 203      1              10           8
+         80               5                40                                   
+                                                                                
+         2 15-MAR-14 04-MAY-14 Closed 103 201      4               7           7
+         49               5                35                                   
+                                                                                
+         3 29-JAN-14           Open   104 202      2              15          12
+        180                                                                     
+
+                                          Product  Reason                       
+     RANUM RAOPENDAT RACLOSEDA STATUS CNU  Number   Code   RETURNQTY RETURNPRICE
+---------- --------- --------- ------ --- -------- ------ ---------- -----------
+RETURNTOTAL ACTUALRETURNQTY ACTUALRETURNTOTAL                                   
+----------- --------------- -----------------                                   
+                                                                                
+         4 11-APR-14           Open   102 204      2              23          11
+        253                                                                     
+                                                                                
